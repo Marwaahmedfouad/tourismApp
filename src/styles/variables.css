@@ -1,0 +1,211 @@
+:root {
+  /* Primitive Color Tokens - Modern Tourism Brand */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  
+  /* Enhanced Tourism Brand Colors */
+  --color-ocean-300: rgba(52, 211, 153, 1);
+  --color-ocean-400: rgba(45, 190, 140, 1);
+  --color-ocean-500: rgba(20, 184, 166, 1);
+  --color-ocean-600: rgba(13, 148, 136, 1);
+  --color-ocean-700: rgba(15, 118, 110, 1);
+  --color-ocean-800: rgba(17, 94, 89, 1);
+  --color-sky-300: rgba(125, 211, 252, 1);
+  --color-sky-400: rgba(56, 189, 248, 1);
+  --color-sky-500: rgba(14, 165, 233, 1);
+  --color-sky-600: rgba(2, 132, 199, 1);
+  --color-sunset-400: rgba(251, 146, 60, 1);
+  --color-sunset-500: rgba(249, 115, 22, 1);
+  --color-sunset-600: rgba(234, 88, 12, 1);
+  --color-coral-400: rgba(248, 113, 113, 1);
+  --color-coral-500: rgba(239, 68, 68, 1);
+  --color-purple-400: rgba(196, 181, 253, 1);
+  --color-purple-500: rgba(168, 85, 247, 1);
+  
+  /* Legacy colors for compatibility */
+  --color-teal-300: var(--color-ocean-300);
+  --color-teal-400: var(--color-ocean-400);
+  --color-teal-500: var(--color-ocean-500);
+  --color-teal-600: var(--color-ocean-600);
+  --color-teal-700: var(--color-ocean-700);
+  --color-teal-800: var(--color-ocean-800);
+  --color-red-400: var(--color-coral-400);
+  --color-red-500: var(--color-coral-500);
+  --color-orange-400: var(--color-sunset-400);
+  --color-orange-500: var(--color-sunset-500);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-ocean-500-rgb: 20, 184, 166;
+  --color-sky-500-rgb: 14, 165, 233;
+  --color-sunset-500-rgb: 249, 115, 22;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-coral-500-rgb: 239, 68, 68;
+  --color-coral-400-rgb: 248, 113, 113;
+  --color-purple-500-rgb: 168, 85, 247;
+  
+  /* Legacy RGB for compatibility */
+  --color-teal-500-rgb: var(--color-ocean-500-rgb);
+  --color-red-500-rgb: var(--color-coral-500-rgb);
+  --color-red-400-rgb: var(--color-coral-400-rgb);
+  --color-orange-500-rgb: var(--color-sunset-500-rgb);
+  --color-orange-400-rgb: var(--color-sunset-400-rgb);
+
+  /* Background color tokens (Light Mode) - Tourism Theme */
+  --color-bg-ocean: rgba(20, 184, 166, 0.08);
+  --color-bg-sky: rgba(14, 165, 233, 0.08);
+  --color-bg-sunset: rgba(249, 115, 22, 0.08);
+  --color-bg-coral: rgba(239, 68, 68, 0.08);
+  --color-bg-purple: rgba(168, 85, 247, 0.08);
+  --color-bg-emerald: rgba(52, 211, 153, 0.08);
+  --color-bg-amber: rgba(245, 158, 11, 0.08);
+  --color-bg-rose: rgba(236, 72, 153, 0.08);
+  
+  /* Legacy background colors */
+  --color-bg-1: var(--color-bg-sky);
+  --color-bg-2: var(--color-bg-amber);
+  --color-bg-3: var(--color-bg-emerald);
+  --color-bg-4: var(--color-bg-coral);
+  --color-bg-5: var(--color-bg-purple);
+  --color-bg-6: var(--color-bg-sunset);
+  --color-bg-7: var(--color-bg-rose);
+  --color-bg-8: var(--color-bg-ocean);
+
+  /* Semantic Color Tokens (Light Mode) - Enhanced Tourism Brand */
+  --color-background: linear-gradient(135deg, var(--color-cream-50) 0%, rgba(252, 252, 249, 0.8) 100%);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-ocean-500);
+  --color-primary-hover: var(--color-ocean-600);
+  --color-primary-active: var(--color-ocean-700);
+  --color-secondary: var(--color-sky-500);
+  --color-secondary-hover: var(--color-sky-600);
+  --color-secondary-active: var(--color-sky-700);
+  --color-accent: var(--color-sunset-500);
+  --color-accent-hover: var(--color-sunset-600);
+  --color-border: rgba(var(--color-ocean-500-rgb), 0.2);
+  --color-btn-primary-text: var(--color-white);
+  --color-card-border: rgba(var(--color-ocean-500-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-ocean-500-rgb), 0.08);
+  --color-error: var(--color-coral-500);
+  --color-success: var(--color-ocean-500);
+  --color-warning: var(--color-sunset-500);
+  --color-info: var(--color-sky-500);
+  --color-focus-ring: rgba(var(--color-ocean-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+  
+  /* Gradient definitions for modern tourism brand */
+  --gradient-primary: linear-gradient(135deg, var(--color-ocean-500) 0%, var(--color-sky-500) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--color-sunset-400) 0%, var(--color-coral-400) 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(20, 184, 166, 0.9) 0%, rgba(14, 165, 233, 0.8) 50%, rgba(168, 85, 247, 0.7) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  --gradient-glass: linear-gradient(145deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
+
+  /* Typography */
+  --font-family-base: "Inter", "FKGroteskNeue", "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  }
+}
+
+/* Add to your variables.css */
+:root {
+  /* Add these new timing functions */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.83, 0, 0.17, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
